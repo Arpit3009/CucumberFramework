@@ -21,7 +21,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>**/TestRunner.java</suiteXmlFile>
+                        <suiteXmlFile>src/test/java/org/example/runner/TestRunner.java</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
