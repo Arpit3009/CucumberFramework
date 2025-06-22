@@ -18,7 +18,7 @@ import org.testng.annotations.DataProvider;
 //        format = {"pretty", "html:target/cucumber-report"},
         monochrome = true,
         publish = true,
-        dryRun = true
+        dryRun = false
 //        tags = "not @gh or not @jk"
 //        tags = "@gh and @jk"
 //        tags = "not @gh and not @jk"
