@@ -2,16 +2,16 @@ package org.example.runner;
 
 
 //import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+//import io.cucumber.junit.Cucumber;
+//import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
-//import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.CucumberOptions;
 //import io.cucumber.junit.CucumberOptions;
 
 import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/taggedhooks.feature",
         glue = {"org.example.stepDefinnitions"},
         plugin = {"pretty", "html:target/cucumber-report.html"},
@@ -25,14 +25,14 @@ import org.testng.annotations.DataProvider;
 //        tags = "@First"
 
 )
-//public class TestRunner extends AbstractTestNGCucumberTests {
-//
-//    @Override
-//    @DataProvider
-//    public Object[][] scenarios(){
-//        return super.scenarios();
-//    }
-//}
+public class TestRunner extends AbstractTestNGCucumberTests {
 
-public class TestRunner {
+    @Override
+    @DataProvider
+    public Object[][] scenarios(){
+        return super.scenarios();
+    }
 }
+
+//public class TestRunner {
+//}
