@@ -31,12 +31,6 @@ public class TaggedHooksStepDefinition {
 	public void tearDown1(){
 		System.out.println("close the browser");
 	}
-
-	@BeforeAll()
-	public static void before_or_after_all(){
-		System.out.println("before all scenario");
-	}
-	
 	@Before("@First")
 	public void beforeFirst(){
 		System.out.println("before only first scenario");
